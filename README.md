@@ -2,6 +2,8 @@
 
 This project is a machine learning-based web application for predicting the likelihood of diabetes in a patient. It consists of a **FastAPI backend** for serving predictions and a **Streamlit frontend** for user interaction.
 
+![App](app.png)
+
 ---
 
 ## Table of Contents
