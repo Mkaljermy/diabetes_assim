@@ -11,11 +11,6 @@ This project is a machine learning-based web application for predicting the like
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4. [Setup Instructions](#setup-instructions)
-5. [Running the Application](#running-the-application)
-6. [API Endpoints](#api-endpoints)
-7. [Validation Rules](#validation-rules)
-8. [Contributing](#contributing)
-9. [License](#license)
 
 ---
 
