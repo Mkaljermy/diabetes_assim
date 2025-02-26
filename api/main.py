@@ -41,21 +41,6 @@ def predict(data: DiabetesData):
         data.Age
     ]])
 
-    # Extract columns to scale
-    columns_to_scale = ['Insulin', 'SkinThickness', 'BloodPressure', 'Glucose']
-    input_data_to_scale = np.array([
-        [data.Insulin, data.SkinThickness, data.BloodPressure, data.Glucose]
-    ])
-
-    # Scale the specified columns
-    scaled_columns = scaler.transform(input_data_to_scale)
-
-    # Replace the original columns with scaled values
-    input_data[0, 4] = scaled_columns[0, 0]  # Insulin
-    input_data[0, 3] = scaled_columns[0, 1]  # SkinThickness
-    input_data[0, 2] = scaled_columns[0, 2]  # BloodPressure
-    input_data[0, 1] = scaled_columns[0, 3]  # Glucose
-
     # Predict
     prediction = model.predict(input_data)[0]  # Use input_data instead of scaled_input
     probability = model.predict_proba(input_data)[0][1]  # Use input_data instead of scaled_input
